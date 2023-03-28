@@ -1,15 +1,20 @@
-import { Title, Description, cardImage } from "./cardComponents";
+import { Title, Description, CardImage } from "./cardComponents";
+import "./simpleCard.css";
 
-function simpleCard() {
+function SimpleCard(props) {
   return (
     <>
       <div className="cardWrapper">
-        <cardImage />
-        <Title />
-        <Description />
+        <CardImage imgSrc={props.imgSrc} />
+        <div id="textContent">
+          <Title title={props.title} />
+          <div id="desc">
+            <Description text={props.description} />
+          </div>
+        </div>
       </div>
     </>
   );
 }
 
-export default simpleCard;
+export default SimpleCard;

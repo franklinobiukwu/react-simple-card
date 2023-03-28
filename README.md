@@ -6,5 +6,6 @@
 
 The card project is a an implementation of my second ReactJS assignment at Codetrain
 
-##Submitted By
+## Submitted By
+
 `Franklin OBIUKWU`

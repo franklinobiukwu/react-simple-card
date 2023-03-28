@@ -1,25 +1,35 @@
-function Title() {
+import React from "react";
+
+// card title
+function Title(props) {
   return (
     <>
-      <h2 className="cardTitle">A Title</h2>
+      <h2 className="cardTitle">{props.title}</h2>
     </>
   );
 }
 
-class Description {
-  constructor(description) {
-    this.description = "The description goes here.";
+// card description
+class Description extends React.Component {
+  render() {
+    return (
+      <>
+        <p className="cardDescription">{this.props.text}</p>
+      </>
+    );
   }
 }
 
-function cardImage() {
+// card image
+const CardImage = (props) => {
   return (
     <>
       <div className="imgWrapper">
-        <img src="#" alt="goofStuff" />
+        <img src={props.imgSrc} alt="goodStuff" />
       </div>
     </>
   );
-}
+};
 
-export { Title, Description, cardImage };
+// export card components
+export { Title, Description, CardImage };

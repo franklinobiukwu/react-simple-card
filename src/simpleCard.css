@@ -1,0 +1,20 @@
+.cardWrapper {
+  display: flex;
+  background-color: #161616;
+  color: #fff;
+  padding-right: 2rem;
+}
+.imgWrapper {
+  width: 20%;
+  min-width: 20rem;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.imgWrapper > img {
+  width: 100%;
+}
+#desc {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-size: 20px; */
+}
